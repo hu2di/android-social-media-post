@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/fr_facebook_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="vn.sunnet.hungdh.socialmediaplatform.settings.facebook.FacebookLoginFragment"
+            tools:layout="@layout/fragment_facebook_login">
+        </fragment>
+    </ScrollView>
+
+</LinearLayout>

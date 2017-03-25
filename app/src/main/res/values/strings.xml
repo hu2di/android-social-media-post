@@ -1,0 +1,39 @@
+<resources>
+    <!--App-->
+    <string name="app_name">SocialPost</string>
+    <string name="app_id">117793378558379</string>
+    <string name="action_settings">Settings</string>
+    <!--Twitter-->
+    <string name="TWITTER_KEY"> z4VmS1WPhSBIWfl3ixdoGE1ap</string>
+    <string name="TWITTER_SECRET">TyFTnuIohwBhZRY44n8TGwwp0YnYxMkpGfelfe28aJVxuACMQy</string>
+    <string name="remove">Remove your account</string>
+    <!--Status-->
+    <string name="status">Compose your post here...</string>
+    <string name="post">Post</string>
+    <string name="schedule">Schedule</string>
+    <string name="sdcard">SD Card</string>
+    <string name="camera">Camera</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <!--Privacy-->
+    <string name="privacy">Privacy</string>
+    <string name="Public">Public</string>
+    <string name="Friends">Friends</string>
+    <string name="Only">Only Me</string>
+    <!--Settings-->
+    <string name="settings">Settings</string>
+    <string name="edit">Edit</string>
+    <string name="mypost">My posts</string>
+    <string name="youraccount">Your account</string>
+    <string name="channels">Channels</string>
+    <!--ListView-->
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="notloggedin">Not logged in</string>
+    <string name="loggedin">Logged in</string>
+    <!--FragmentLogin-->
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="fragment_fb">Log in Facebook</string>
+    <string name="frament_tw">Log in Twitter</string>
+</resources>

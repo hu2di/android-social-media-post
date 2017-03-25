@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical"
+    tools:context="vn.sunnet.hungdh.socialmediaplatform.settings.facebook.FacebookLoginFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:src="@drawable/facebook_custom_logo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/back"
+            android:gravity="bottom"
+            android:paddingLeft="16dp"
+            android:text="@string/youraccount"
+            android:textColor="@color/text" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/white"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="?actionBarSize"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text="@string/name"
+                   android:paddingLeft="16dp"
+                   android:textColor="@color/black"
+                   android:gravity="center_vertical"/>
+               <TextView
+                   android:id="@+id/tv_username"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="2"
+                   android:text=""
+                   android:textColor="@color/black"
+                   android:gravity="center_vertical"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="?actionBarSize"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text="@string/email"
+                   android:paddingLeft="16dp"
+                   android:textColor="@color/black"
+                   android:gravity="center_vertical"/>
+               <TextView
+                   android:id="@+id/tv_email"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="2"
+                   android:text=""
+                   android:textColor="@color/black"
+                   android:gravity="center_vertical"
+                   />
+           </LinearLayout>
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/back"
+            android:gravity="bottom"
+            android:text="@string/privacy"
+            android:paddingLeft="16dp"
+            android:textColor="@color/text" />
+        <RadioGroup
+            android:id="@+id/rg_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rb_public"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Public"/>
+            <RadioButton
+                android:id="@+id/rb_friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Friends"/>
+            <RadioButton
+                android:id="@+id/rb_only_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Only"/>
+        </RadioGroup>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/tv_facebook_remove"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/remove"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

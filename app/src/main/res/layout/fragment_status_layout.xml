@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/back"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_status_settings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@color/back"
+                android:padding="16dp"
+                android:src="@drawable/settings_icon" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_status_facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/back"
+                    android:paddingLeft="16dp"
+                    android:src="@drawable/icon_facebook_des" />
+
+                <ImageButton
+                    android:id="@+id/btn_status_twitter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/back"
+                    android:paddingLeft="16dp"
+                    android:src="@drawable/icon_twitter_des" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/btn_schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:background="@color/back" />
+
+                    <ImageButton
+                        android:id="@+id/btn_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/back" />
+
+                    <ImageView
+                        android:id="@+id/iv_post_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/post_switch"/>
+
+                    <TextView
+                        android:id="@+id/tv_keotha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:background="@color/blue"/>
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/top"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:cursorVisible="true"
+            android:gravity="top"
+            android:hint="@string/status"
+            android:maxLength="140"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:src="@drawable/canceled_filter_icon" />
+
+        <TextView
+            android:id="@+id/tv_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="16dp"
+            android:text="140"
+            android:textSize="17sp" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_tag"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/bottom"
+        android:animateLayoutChanges="true"
+        android:background="@color/back"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/pb_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ListView
+            android:id="@+id/lv_tag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_trend"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/bottom"
+        android:animateLayoutChanges="true"
+        android:background="@color/back"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/pb_trend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ListView
+            android:id="@+id/lv_trend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/back">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/btn_capture"
+                    android:background="@color/back"
+                    android:src="@drawable/images_icon" />
+
+                <ImageButton
+                    android:id="@+id/btn_choose_image"
+                    android:background="@color/back"
+                    android:src="@drawable/album_icon" />
+
+                <ImageButton
+                    android:id="@+id/btn_tag"
+                    android:background="@color/back"
+                    android:src="@drawable/arroba_icon" />
+
+                <ImageButton
+                    android:id="@+id/btn_trend"
+                    android:background="@color/back"
+                    android:src="@drawable/hashtag_icon" />
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_span="5"
+            android:src="@drawable/icon_facebook"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_span="15"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/facebook"
+                android:textSize="17sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/loggedin"
+                android:textSize="10sp"
+                android:textColor="@color/text" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_span="1"
+            android:src="@drawable/check_icon"
+            android:layout_gravity="center"/>
+    </TableRow>
+</TableLayout>

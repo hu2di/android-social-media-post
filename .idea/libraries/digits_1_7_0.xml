@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="digits-1.7.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.7.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.7.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
