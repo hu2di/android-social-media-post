@@ -5,4 +5,3 @@ Android app that public post to Facebook, Twitter
 - Created by HuyHung Dinh
 - GitHub: https://github.com/hu2di
 - Email: hebitaxy@gmail.com
-- Donate: [**PayPal**](https://www.paypal.me/hungdh)
